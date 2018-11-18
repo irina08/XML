@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment 
+purpose: HW 8 CNIT 131A Homeworks
+student: CNIT 131A Irina Golovko
+date: 11/03/2018 -->
+<title>Student Irina Golovko - CNIT 131A Homework 8</title>
+<meta name="description" content="CNIT131A HW8.">
+<meta charset="UTF-8">
+
+<style>
+body 
+{
+	background-image: url('mix.jpg');
+	text-align: center;
+	font-family: arial; 
+}
+
+header
+{
+	text-align: center;
+}
+
+.main 
+{
+	
+	background-color: #e6fff5;
+	border-style: dotted;
+	margin-bottom: 35px;
+	margin-top: 35px;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 25px;	
+}
+
+#imgP
+{
+	width: 170px;
+	height: 100px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	text-align: left;
+}
+
+a.left { 
+	float: left;
+}
+
+.f 
+{
+	font-style: italic; 
+	color: #808080;
+	text-align:center;
+}
+
+a 
+{ 
+	text-decoration: none;
+	color: #0000ff;
+}
+
+a:hover 
+{
+	color: #000000; 
+	text-decoration: underline;
+}
+
+h3 {
+	color: #0000ff;
+}
+
+p {
+	text-align: justify;
+	font-size: 14px;
+}
+
+</style>
+
+</head>
+<body>
+<div class="main">
+
+<header>	
+<img src="bannerIrinaGolovkoXML.jpg" alt="Introduction">
+<img src="IMG_0062.JPG" id="imgP" alt="MyPhoto">
+</header>
+
+<section>
+<h3>The main differences between XSLT 1.0 and XSLT 2.0</h3>
+<p>1) XSLT 2.0 defines 2 levels for the language: the XSLT 2.0 processor can be 
+a basic XSLT processor, or it can be a Schema aware processor(it allows the type
+system of XSLT to be infinitely extensible: validate input and output trees, 
+validate temporary trees, use user-defined types in the XPath expressions and 
+template match patterns). XSLT defines only 1 level: a basic XSLT processor.<br>
+2) XSLT 1.0 had a very restricted type system. It only defined 5 data types: String, 
+number, boolean, node-set, result tree. XSLT 2.0 provides a very extensive type system.<br>
+3) XSLT 2.0 has style sheets that only have a template rule for the root node, 
+and no other template rules like in XSLT 1.0.<br>
+4) XSLT 2.0 has direct support for generating XHTML-compliant output documents.<br>
+5) With XSLT 2.0 we can produce multiple output documents from a single run of 
+the processor.<br>
+6) XSLT 2.0 supports newest instruction called xsl:function, which allows user-defined 
+functions, and allows use them in XPath expressions.<br>
+7) XSLT 2.0 allows templates and functions accept and return typed value.<br>
+8) With the introduction of 'xsl:for-each-group' instruction in XSLT 2.0, grouping 
+of XML data is now much easier.<br>
+9) XSLT 1.0 cannot validate its own output against an XML Schema.<br>
+XSLT 2.0 include the ability to validate the output of XSLT transformation 
+against an XML Schema, as a part of the XSLT transformation.<br>
+10) XSLT 2.0 allows to create more than one result tree.<br>
+11) Many XSLT 2.0 instructions can operate on regular expressions (matches, replace, tokenize).<br>
+12) For various error conditions, error codes have been defined, and the XSLT 2.0 
+processor is required to support all these error conditions and codes.</p>
+
+<h3>The main differences between XPath 1.0 and XPath 2.0</h3> 	
+<p>1) XPath 2.0 supports new data model  - XDM (XQuery/Xpath Data Model). 
+It makes XPath 2.0 a strongly typed language.<br> 
+2) XPath 1.0 supports only 4 data types: string, boolean, node-set, number.<br> 
+XPath 2.0 supports new data types based on XML schema (XPath 2.0 supports 
+all the simple primitive types built into XML schema). The XPath 2.0 data 
+model also supports data types that we can derive from these data types in 
+our own XML schema.<br>
+3) XPath 2.0 has a lot of newest built-in functions that we can use, and many more operators. 
+These functions and operators are far more type-aware than what we have seen in XPath 1.0. 
+(more date-time functions, string functions).<br>
+4) The return value of expressions in XPath 2.0 is a sequence (it is a comma-separated, ordered 
+list of items, where an item is defined as either a node or an atomic value (it is a simple 
+type or a custom type derived by restriction)). Sequence can have a duplicate value.
+To remove duplicate items from sequence we can use distinct-values() built-in function.<br>
+5) Instead of using function 'sum(value) div count(value)' for counting average 
+we can use new functions in XPath 2.0 like avg(), min(), max().<br>
+6) XPath 2.0 has more new built-in functions for formatting string 
+like upper-case(), lower-case(), not only translate().<br>
+7) XPath 2.0 has the ability to test for conditions within an XPath expression 
+itself with "if-then-else". The test condition can be any expression that evaluates 
+to a boolean value, not only an expression using nodes.<br>
+8) For expression in XPath 2.0 let us handle sequences by looping, or iterating, 
+over all items in a sequence.<br>
+9) With XPath 2.0 we can write comments using next construction: (: comments go here :).<br>
+10) In XPath 1.0, we could use the | operator to create the union (combination) of two sets. 
+In XPath 2.0, we can create not only unions (using operator 'union'), 
+but also intersections(all items two sequences have in common) using operator 'intersect', 
+and differences (all items that two sequences have that are not in common) using 
+operator 'except'.</p>	
+		
+<h3>Titles of books, which cost less or equal 30.00$:</h3>
+<ul>
+	<li>Harry Potter</li>
+	<li>The Snowy Days</li>
+</ul>	
+<br>
+		
+<a href="hw8.xq" class="left" target="_blank">Link to XQuery</a>			
+</section>
+
+<br>
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+
+<script>
+var dateModified = document.lastModified;
+mydate = dateModified.slice(0,16);
+document.write(" | Last updated: " + mydate); 	
+</script>
+<br><br>
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit131a%2Fhw8.html"
+target="_blank">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit131a%2Fhw8.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" 
+target="_blank">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+
+</footer>
+</div>
+</body>
+</html>

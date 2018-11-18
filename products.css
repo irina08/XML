@@ -1,0 +1,19 @@
+/* This CSS stylesheet is an example of how we can style XML with CSS */
+
+products { display:block}
+product {display:block; }
+name, price, stock, country {display:block}
+name {color:red; text-decoration: underline}
+price {color:green}
+stock {color:brown}
+country {color:blue}
+
+/* IE supports the ID selector also for XML */
+product#p4 {text-align:right}
+/* Alternative in: Firefox, Opera, Google Chrome *
+/product[id=p4] {text-align:right}
+
+/* IE supports the class attribute for XML */
+product.special {background-color:mistyrose}
+/* Alternative in: Firefox, Opera, Google Chrome */
+product[class=special] {background-color:mistyrose} 

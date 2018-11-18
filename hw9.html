@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- This is a comment 
+purpose: HW 9 CNIT 131A Homeworks
+student: CNIT 131A Irina Golovko
+date: 11/15/2018 -->
+<title>Student Irina Golovko - CNIT 131A Homework 9 - SVG files.</title>
+<meta name="description" content="CNIT131A HW9 SVG files.">
+<meta charset="UTF-8">
+
+<style>
+body 
+{
+	background-image: url('mix.jpg');
+	font-family: arial; 
+}
+
+.main 
+{
+	background-color: #e6fff5;
+	border-style: dotted;
+	margin-bottom: 35px;
+	margin-top: 35px;
+	margin-left: 100px;
+	margin-right: 100px;
+	padding: 25px;	
+}
+
+.f 
+{
+	font-style: italic; 
+	color: #808080;
+	text-align:center;
+}
+
+a 
+{ 
+	text-decoration: none;
+	color: #0000ff;
+}
+
+a:hover 
+{
+	color: #000000; 
+	text-decoration: underline;
+}
+
+.blue {
+	color: blue;
+}
+
+.red {
+	color: #b70000;
+	font-weight: bold;
+}
+
+p {
+	text-indent: 20px;
+	text-align: justify;
+	font-size: 16px;
+	color: blue;
+}
+
+table
+{ 
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+.center {
+	text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="main">
+<section>
+<h2 class="center blue">SVG Files in CNIT 131A</h2>
+
+<table>
+	<tr>
+		<td class="red center" style="width:160px;">An yellow rectangle<br>with a blue border</td>
+		<td class="red center" style="width:250px;">A blue circule<br>with a red border</td>
+		<td class="red center">A green rectangle<br>with a gradient color</td>
+	</tr>
+</table>
+<br>
+			
+<object data="rect.svg" type="image/svg+xml" width="220" height="150">
+Your browser doesn&#8217;t support SVG.
+</object>
+
+<object data="circle.svg" type="image/svg+xml" width="220" height="150">
+Your browser doesn&#8217;t support SVG.
+</object>	
+
+<object data="gradient1.svg" type="image/svg+xml" width="220" height="150">
+Your browser doesn&#8217;t support SVG.
+</object>	
+
+<p>I used &lt;object&gt; tag for embeding SVG files into the HTML document:<br>
+- Because of possibility to provide fallback text or images within the object block;<br>
+- It&#8217;s the most reliable method if we want to provide dynamic effects based on 
+user interactions.</p>
+				
+</section>	
+<br>
+		
+<footer class="f">
+Email: <a href="mailto:igolovko@mail.ccsf.edu">igolovko@mail.ccsf.edu</a>
+<br>
+Copyright &copy; Irina Golovko, 2018 
+
+<script>
+var dateModified = document.lastModified;
+mydate = dateModified.slice(0,16);
+document.write(" | Last updated: " + mydate); 	
+</script>
+<br><br>
+
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit131a%2Fhw9.html"
+target="_blank">
+<img style="border:0;width:88px;height:31px"
+src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" 
+alt="HTML5"></a>
+
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fhills.ccsf.edu%2F%7Eigolovko%2Fcnit131a%2Fhw9.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" 
+target="_blank">
+<img style="border:0;width:88px;height:31px;"
+src="http://jigsaw.w3.org/css-validator/images/vcss" 
+alt="Valid CSS!"></a>
+
+</footer>
+</div>
+</body>
+</html>

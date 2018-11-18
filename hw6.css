@@ -1,0 +1,29 @@
+/* This is a comment purpose: 
+It's a hw6.css file for styling
+hw6.xml
+student: CNIT 131A Irina Golovko
+date: 10/18/2018 
+file: hw6.css
+*/
+
+Member {
+	background-color: #D3D3D3;
+	display: block;
+	margin: 10px;
+	
+}
+
+Name, Age, Job, Date, Phone {
+	display: block;
+	background-color: #ADD8E6;	
+}
+
+Name {
+	color: red;
+	font-weight: bold;
+	font-size: 25px;
+}
+	
+Age, Job, Date, Phone {
+	font-size: 20px;
+}

@@ -1,0 +1,44 @@
+/* This is a comment purpose: 
+It's a hw2.css file for styling
+hw2.xml
+student: CNIT 131A Irina Golovko
+date: 08/29/2018 
+hw2.xml tested for displaying in the
+Google Chrome, Firefox, Safari browsers.
+*/
+
+catalog {
+	background-color: #D3D3D3;
+	display: block;
+	margin: 10px;
+	
+}
+
+book {
+	display: block; 
+	margin: 10px; 
+	padding: 5px;
+	border: 1px solid silver;
+}
+
+name, author, publisher {
+	display: block;
+}
+
+name {
+	color: red;
+	font-weight: bold;
+	font-size: 25px;	
+}
+
+author, publisher {
+	font-size: 20px;
+}
+		
+/* Because of Google Chrome we should 
+to use class attribute with value
+in order to apply style with different 
+color for book 1,3,5.....*/
+book[class=color] {
+	background-color: #ADD8E6;
+}	

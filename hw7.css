@@ -1,0 +1,35 @@
+/* This is a comment purpose: 
+It's a hw7.css file for styling
+hw7final.xml
+student: CNIT 131A Irina Golovko
+date: 10/28/2018 
+*/
+
+
+@namespace west "http://www.gov.org/west";
+
+states {
+	background-color: #D3D3D3;
+}
+
+/* These rules would apply to any `state` elements. */
+state {
+	display: block;
+	font-size: 20px;
+	padding: 2px;
+	text-indent: 40px;
+}
+
+/* These rules would apply to west `state` elements only. */
+west|state {
+	background-color: #80ffff;
+}
+
+/* These rules would apply to any `name` elements. */
+name {
+	color: blue;	
+	font-weight: bold;
+}
+
+
+

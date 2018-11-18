@@ -1,0 +1,37 @@
+/* This is a comment purpose: 
+It's a hw5.css file for styling
+hw5.xml
+student: CNIT 131A Irina Golovko
+date: 09/30/2018 
+file: hw5.xml 
+*/
+
+Products {
+	background-color: #D3D3D3;
+	display: block;
+	margin: 10px;
+	
+}
+
+Prod {
+	display: block; 
+	margin: 10px; 
+	padding: 5px;
+	border: 1px solid silver;
+}
+
+Short_Desc, Long_Desc, Quantity, Unit_Price, Color, Loc {
+	display: block;
+	background-color: #ADD8E6;
+}
+
+Short_Desc {
+	color: red;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+Long_Desc, Quantity, Unit_Price, Color, Loc {
+	font-size: 20px;
+}
+		
